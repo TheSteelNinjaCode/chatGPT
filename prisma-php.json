@@ -1,0 +1,18 @@
+{
+  "projectName": "chatGPT",
+  "projectRootPath": "C:\\xampp\\htdocs\\projects\\prisma-php\\posts\\chatGPT",
+  "phpEnvironment": "XAMPP",
+  "phpRootPathExe": "C:\\xampp\\php\\php.exe",
+  "phpGenerateClassPath": "",
+  "bsTarget": "http://localhost/projects/prisma-php/posts/chatGPT/",
+  "bsPathRewrite": {
+    "^/": "/projects/prisma-php/posts/chatGPT/"
+  },
+  "tailwindcss": true,
+  "websocket": false,
+  "prisma": false,
+  "htmx": true,
+  "docker": false,
+  "version": "1.13.3",
+  "excludeFiles": []
+}
