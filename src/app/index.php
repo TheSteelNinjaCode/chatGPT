@@ -70,13 +70,18 @@ try {
                 </div>
             <?php } ?>
         </div>
-        <form class="flex flex-col gap-4" 
-        hx-post="<?= $pathname ?>" 
-        hx-swap="beforeend scroll:bottom" 
-        hx-target="#chat-container" 
-        hx-trigger="submit" 
-        hx-vals='{"attributes": [{"id":"message", "attributes": {"add":"readonly"}}, {"id":"send", "attributes": {"add":"disabled"}}, {"id":"loading", "attributes": {"class":"-hidden block"}}], 
-        "swaps": [{"id":"message", "attributes": {"remove":"readonly"}}, {"id":"send", "attributes": {"remove":"disabled"}}, {"id":"loading", "attributes": {"class":"-block hidden"}}]}' hx-form="afterRequest:reset">
+        <form class="flex flex-col gap-4" hx-post="<?= $pathname ?>" hx-swap="beforeend scroll:bottom" hx-target="#chat-container" hx-trigger="submit" hx-vals='{
+        "attributes": [
+            { "id": "message", "attributes": { "add": "readonly" } },
+            { "id": "send", "attributes": { "add": "disabled" } },
+            { "id": "loading", "attributes": { "class": "-hidden block" } }
+        ],
+        "swaps": [
+            { "id": "message", "attributes": { "remove": "readonly" } },
+            { "id": "send", "attributes": { "remove": "disabled" } },
+            { "id": "loading", "attributes": { "class": "-block hidden" } }
+        ]
+        }' hx-form="afterRequest:reset">
             <input id="message" type="text" name="message" placeholder="Type a message..." class="border rounded p-2 w-full" required>
             <button id="send" class="btn btn-primary">
                 <span id="loading" class="loading loading-spinner hidden"></span>
